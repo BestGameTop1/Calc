@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+</head>
+
+<body class="d-flex flex-column h-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="img" src="assets/favicon.ico" alt="" height="40px">
+                First calc Артёма
+            </a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="calculator card">
+            <div class="calculator-keys">
+                <div class="input z-depth-1">0</div>
+
+                <button class=" btn btn-light waves-effect type">deg</button>
+                <button class=" btn btn-light waves-effect" onclick="f('sin')">sin</button>
+                <button class=" btn btn-light waves-effect" onclick="f('cos')">cos</button>
+                <button class=" btn btn-light waves-effect" onclick="f('tan')">tan</button>
+                <button class=" btn btn-light waves-effect" onclick="f('ctg')">ctg</button>
+
+                <button class=" btn btn-light waves-effect" onclick="operation('^')">x<span>y</span></button>
+                <button class=" btn btn-light waves-effect" onclick="log('lg')">lg</button>
+                <button class=" btn btn-light waves-effect" onclick="log('ln')">ln</button>
+                <button class=" btn btn-light waves-effect" onclick="insert('(')">(</button>
+                <button class=" btn btn-light waves-effect" onclick="insert(')')">)</button>
+
+                <button class=" btn btn-light waves-effect" onclick="operation('sqr')">x<span>2</span></button>
+                <button class=" btn btn-danger waves-effect clean" onclick="clean()">C</button>
+                <button class=" btn btn-danger waves-effect back" onclick="back()">&lArr;</button>
+                <button class=" btn btn-danger waves-effect percent" onclick="percent()">%</button>
+                <button class=" btn btn-danger divide" onclick="insert('/')">&divide;</button>
+
+                <button class=" btn btn-light waves-effect" onclick="operation('^-1')">x<span>-1</span></button>
+                <button class=" btn btn-light waves-effect" onclick="insert('7')">7</button>
+                <button class=" btn btn-light waves-effect" onclick="insert('8')">8</button>
+                <button class=" btn btn-light waves-effect" onclick="insert('9')">9</button>
+                <button class=" btn btn-danger mul" onclick="insert('*')">&times;</button>
+
+                <button class=" btn btn-light waves-effect" onclick="operation('sqrt')">&radic;x</button>
+                <button class=" btn btn-light waves-effect" onclick="insert('4')">4</button>
+                <button class=" btn btn-light waves-effect" onclick="insert('5')">5</button>
+                <button class=" btn btn-light waves-effect" onclick="insert('6')">6</button>
+                <button class=" btn btn-danger sub" onclick="insert('-')">-</button>
+
+                <button class=" btn btn-light waves-effect" onclick="fact()">x!</button>
+                <button class=" btn btn-light waves-effect" onclick="insert('1')">1</button>
+                <button class=" btn btn-light waves-effect" onclick="insert('2')">2</button>
+                <button class=" btn btn-light waves-effect" onclick="insert('3')">3</button>
+                <button class=" btn btn-danger add" onclick="insert('+')">+</button>
+
+                <button class=" btn btn-light waves-effect" onclick="constant('pi')">&prod;</button>
+                <button class=" btn btn-light waves-effect" onclick="constant('e')">e</button>
+                <button class=" btn btn-light waves-effect zero" onclick="insert('0')">0</button>
+                <button class=" btn btn-light waves-effect" onclick="insert('.')">,</button>
+                <button class=" btn btn-danger waves-effect equal" onclick="equal()">=</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container">
+            <span class="text-muted">Copiright 2022</span>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
